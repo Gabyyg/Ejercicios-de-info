@@ -3,17 +3,22 @@ public class Main {
   static Scanner entrada = new Scanner(System.in);
   public static void main(String[] args) {
 
-       String Branch = "CSE" ;
-        int year = 2 ;
-  
+        
+        int year;
+        System.out.println("Ingrese el año que cursa");
+        year=entrada.nextInt();        
+        
         switch ( year )
         {
             case 1 :
                 System.out.println ( " Cursos electivos : Ingles , Calculo " ) ;
                 break ;
             case 2 :
-                
-            switch ( Branch )
+              String Curso;
+              System.out.println("Ingrese branch que desee: CSE, CCE, ECE");
+              Curso=entrada.nextLine(); 
+              System.out.println(Curso);
+            switch ( Curso )
                 {
                     case "CSE" : 
                          break ; 
@@ -30,4 +35,4 @@ public class Main {
             }
         }    
     }
-} 
+}  
