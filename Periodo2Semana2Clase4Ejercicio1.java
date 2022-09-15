@@ -1,27 +1,28 @@
-package periodo2clase4 ;
-public class Periodo2Clase4 {
-    public static void main ( String [ ] args ) {
-        int day = 5 ;
-        String dayString ;
+public class Main {
+  static Scanner entrada = new Scanner(System.in);
+  public static void main(String[] args) {
+
+     int day = 5 ;
+        String dayName ;
         switch ( day )
         {
-            case 1:  dayString = " Lunes " ;
+            case 1:  dayName = " Lunes " ;
                      break ;
-            case 2:  dayString = " Martes " ;
+            case 2:  dayName = " Martes " ;
                      break ;
-            case 3:  dayString = " Miercoles " ;
+            case 3:  dayName = " Miercoles " ;
                      break ;
-            case 4:  dayString = " Jueves " ;
+            case 4:  dayName = " Jueves " ;
                      break ;
-            case 5:  dayString = " Viernes " ;
+            case 5:  dayName = " Viernes " ;
                      break ;
-            case 6:  dayString = " Sabado " ;
+            case 6:  dayName = " Sabado " ;
                      break ;
-            case 7:  dayString " Domingo " ;
+            case 7:  dayName = " Domingo " ;
                      break ;
-            default: dayString = " Dia inválido " ;
+            default: dayName = " Dia inválido " ;
                      break ;
         }    
-        System.out.println ( dayString ) ;
+        System.out.println ( dayName ) ;
     }
-}  
+}   
