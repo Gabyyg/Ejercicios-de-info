@@ -1,7 +1,9 @@
-package periodo2clase5 ;
-public class Periodo2Clase5
-    public static void main ( String [ ] args ) {
-        String Branch = " CSE " ;
+import java.util.Scanner;
+public class Main {
+  static Scanner entrada = new Scanner(System.in);
+  public static void main(String[] args) {
+
+       String Branch = "CSE" ;
         int year = 2 ;
   
         switch ( year )
@@ -10,20 +12,22 @@ public class Periodo2Clase5
                 System.out.println ( " Cursos electivos : Ingles , Calculo " ) ;
                 break ;
             case 2 :
-                switch ( Branch )
+                
+            switch ( Branch )
                 {
-                    case " CSE " :
-                    case " CCE " :
+                    case "CSE" : 
+                         break ; 
+                    case "CCE" :
                          System.out.println ( " Cursos electivos : Machine Learning , Big Data " ) ;
-                    break ;
+                         break ;
                     
-                    case " ECE " :
+                    case "ECE" :
                         System.out.println ( " Cursos electivos : Programacion " ) ;
-                    break ;
+                        break ;
                     
                     default :
                          System.out.println ( " Cursos electivos : Ingenieria de Software " ) ;
             }
         }    
     }
-}
+} 
