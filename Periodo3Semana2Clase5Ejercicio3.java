@@ -1,11 +1,11 @@
-public class Bandera {
-  
-    public static void main ( String [ ] args ) {
-        
-        Scanner objeto = new Scanner ( System.in ) ;
+import java.util.Scanner;
+public class Main {
+  static Scanner objeto = new Scanner(System.in);
+  public static void main(String[] args) {
+    
         int valor , conteo = 0 ;
         double suma = 0 ;
-        boolean seguir - false ;
+        boolean seguir = false ;
         
         while ( ! ( seguir ) )
         {
@@ -19,11 +19,11 @@ public class Bandera {
            else
            {
            conteo ++ ;
-           suma + = valor ;
+           suma += valor ;
            }
         }
         
-        if (conteo ! = 0)
+        if (conteo != 0)
         {
              System.out.println ( " La cantidad de valores ingresados es " + conteo ) ;
         System.out.println ( " La suma de todos los valores es " + suma ) ;
@@ -32,4 +32,5 @@ public class Bandera {
         {
                System.out.println ( " ♥ ♥ ♥ chao , lea indicaciones ♥ ♥ ♥ ");
         }
-    }    
+    }
+}
