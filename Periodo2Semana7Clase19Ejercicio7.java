@@ -1,25 +1,37 @@
-backage periodo2clase191 ;
+import java.util.Scanner;
 import javax.swing.JOptionPane ;
-public class Periodo2Clase191 {
-    public static void main ( String [ ] args ) {
-        String daysLeft = " " ;
-        String weekDay = JOptionPane.showInputDialog ( " Ingresar el día de la semana ( en ingles ) " ) ;
-        switch ( weekDay.toUpperCase ( ) ) {
-        case " SUNDAY " :
-                 daysLeft = daysLeft + " Sunday " ;
-        case " MONDAY " :
-                 daysLeft = daysLeft + " Monday " ; 
-        case " TUESDAY " :
-                 daysLeft = daysLeft + " Tuesday " ;
-        case " WEDNESDAY " :
-                 daysLeft = daysLeft + " Wednesday" ;
-        case " THURSDAY " :
-                 daysLeft = daysLeft + " Thursday " ;
-        case " FRIDAY " :
-                 daysLeft = daysLeft + " Friday " ;
-        case " SATURDAY " :
-                 daysLeft = daysLeft + " Saturday " ;
+public class Main {
+  static Scanner entrada = new Scanner(System.in);
+  public static void main(String[] args) {
+    
+        int daysLeft=0;
+        String weekDay = JOptionPane.showInputDialog ( " Ingresar el día de la semana (en ingles) " ) ;
+        
+        switch (weekDay) {
+        case "SUNDAY" :
+                 daysLeft = Integer.parseInt(JOptionPane.showInputDialog (7));
+                break;
+        case "MONDAY" :
+                 daysLeft = Integer.parseInt(JOptionPane.showInputDialog (6)); ; 
+              break;
+        case "TUESDAY" :
+                 daysLeft = Integer.parseInt(JOptionPane.showInputDialog (5));;
+                break;
+        case "WEDNESDAY" :
+                 daysLeft = Integer.parseInt(JOptionPane.showInputDialog (4)); ;
+                break;
+        case "THURSDAY" :
+                 daysLeft = Integer.parseInt(JOptionPane.showInputDialog (3)); ;
+                break;
+        case "FRIDAY" :
+                 daysLeft = Integer.parseInt(JOptionPane.showInputDialog (2)); ;
+                  break;
+        case "SATURDAY" :
+                 daysLeft = Integer.parseInt(JOptionPane.showInputDialog (1));;
+                break;
+        default: break;    
         }    
-        JOptionPane.showMessageDialog ( null , " Quedan \ " " + daysLeft + " \ " para terminar la semana " ) ;
+    
+        JOptionPane.showMessageDialog ( null , " Quedan  "  + daysLeft + " para terminar la semana " ) ;
     }
-}  
+} 
