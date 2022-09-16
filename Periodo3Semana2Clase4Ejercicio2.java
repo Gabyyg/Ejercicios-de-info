@@ -1,16 +1,16 @@
-public static void main ( String [ ] args ) {
+public class Main {
+  public static void main(String[] args) {
   
-     Scanner objetoNum = new Scanner ( System.in ) ;
+    int valor ;  
   
-    int valinicial , valfinal ;  
-  
-    valinicial = 8 ;
+    valor = 8 ;
     System.out.println ( " Múltiplos de 8 hasta 500 " ) ;
   
-    while ( valinicial < = 500 )
+    while ( valor <= 500 )
     
     {
-       System.out.print ( valinicial + " , " ) ;
-        valinicial - valinicial + 8 ;
-    }
-}  
+       System.out.print ( valor + ", " ) ;
+        valor = valor + 8 ;
+    } 
+  } 
+}
